@@ -1,0 +1,21 @@
+import React from 'react'
+import { EditorProps } from 'react-data-grid';
+
+export const textEditorClassname = `rdg-text-editor`;
+
+export default function textEditor<TRow, TSummaryRow>({
+  row,
+  column,
+  onRowChange,
+  onClose
+}: EditorProps<TRow, TSummaryRow>) {
+  return (
+    <input
+      className={textEditorClassname}
+      ref={autoFocusAndSelect}
+      value={row[column.key as keyof TRow] as unknown as string}
+      onChange={(event) => onRowChange({ ...row, [column.key]: event.target.value })}
+      onBlur={() => onClose(true)}
+    />
+  );
+}

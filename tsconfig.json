@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "checkJs": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/api/auth/signin.js", "pages/api/add_user.js", "pages/_middleware.js", "components/layout/LayoutHOC.js", "components/layout/LayoutHOC.js", "components/Hoc.js", "components/Hoc.jsx", "pages/index.js", "pages/api/report/staff/pdf.tsx"],
+  "exclude": ["node_modules"]
+}
